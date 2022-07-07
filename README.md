@@ -1,2 +1,2 @@
 # bubble-sort
-A sorting algorithm that compares adjacent elements in an array and put then in the right order.
+A sorting algorithm that compares adjacent elements in an array and puts them in the right order.
