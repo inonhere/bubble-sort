@@ -4,13 +4,17 @@ array = []
 def bubble_sort(lets_sort, arrayF)
     l = lets_sort.length
     i = 0
-    while i < l do 
-        if lets_sort[i - 1] > lets_sort[i]
-          arrayF.unshift(lets_sort[i])
+    while i < l do
+        (l - 1).times do |index| 
+            if lets_sort[index] > lets_sort[index + 1]
+                lets_sort[index], lets_sort[index + 1] = lets_sort[index + 1], lets_sort[index]
+            end
         end
-       p i += 1
+        i += 1
     end
+    arrayF.push(lets_sort)
+    lets_sort
 end
 
-bubble_sort(to_sort, array)
+p bubble_sort(to_sort, array)
 p array
