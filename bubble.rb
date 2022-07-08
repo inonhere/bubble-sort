@@ -1,4 +1,4 @@
-to_sort = [4,3,78,2,0,2]
+to_sort = [4,3,78,2,0,2,100,5,7,5,20,56,78,20]
 array = []
 
 def bubble_sort(lets_sort, arrayF)
@@ -12,7 +12,9 @@ def bubble_sort(lets_sort, arrayF)
         end
         i += 1
     end
-    arrayF.push(lets_sort)
+    lets_sort.each do |item|
+        arrayF.push(item)
+    end
     lets_sort
 end
 
