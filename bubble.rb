@@ -3,13 +3,12 @@ array = []
 
 def bubble_sort(lets_sort, arrayF)
     l = lets_sort.length
-    i = 1
-    loop do 
+    i = 0
+    while i < l do 
         if lets_sort[i - 1] > lets_sort[i]
-            arrayF.push(lets_sort)
+          arrayF.unshift(lets_sort[i])
         end
-        i += 1
-        break if i == l
+       p i += 1
     end
 end
 
